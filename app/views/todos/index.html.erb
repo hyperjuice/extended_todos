@@ -13,7 +13,7 @@
 		</div>
 	<% end %>
 	
-	<% form_for :todo, url: "/authors/#{@author.id}/todos", method: "post" do |f| %>
+	<%= form_for :todo, url: "/authors/#{@author.id}/todos", method: "post" do |f| %>
 	<%= f.text_field :description %>
 	<%= f.submit "save todo" %>
 

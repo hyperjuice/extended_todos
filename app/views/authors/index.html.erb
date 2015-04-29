@@ -12,7 +12,7 @@
 	<% end %>
 	
 	<div>hello</div>
-	<% form_for :author, url: "/authors", method: "post" do |f| %>
+	<%= form_for :author, url: "/authors", method: "post" do |f| %>
 	<%= f.text_field :name %>
 	<%= f.submit "save author" %>
 
