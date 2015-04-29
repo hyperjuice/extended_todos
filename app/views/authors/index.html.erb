@@ -11,10 +11,11 @@
 		</div>
 	<% end %>
 	
+	<div>hello</div>
 	<% form_for :author, url: "/authors", method: "post" do |f| %>
 	<%= f.text_field :name %>
 	<%= f.submit "save author" %>
 
-	<% end %>	
+	<% end %> 	
 </body>
 </html>

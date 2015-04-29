@@ -1,5 +1,5 @@
 class TodosController < ApplicationController
-	def  index
+	def index
 		@author = Author.find(params[:id])
 		@todos = @author.todos
 	end

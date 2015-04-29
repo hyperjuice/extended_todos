@@ -10,5 +10,4 @@ Rails.application.routes.draw do
   # allows us to not have to have a "hidden field")
   get '/authors/:id/todos', to: 'todos#index'
   post '/authors/:id/todos', to: 'todos#create'
-
 end
